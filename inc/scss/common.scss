@@ -4,6 +4,10 @@
 @import url(../css/font.css);
 
 // common
+html {
+	min-width: 1280px;
+}
+
 body {
 	overflow-y: hidden;
 }
@@ -77,6 +81,10 @@ body {
 				}
 			}
 		}
+	}
+
+	@media (max-width: 1280px) {
+		width: 100%;
 	}
 }
 
@@ -1355,6 +1363,7 @@ input[type="checkbox"] {
 	height: 100%;
 	min-height: 100vh;
 	background-color: #f9f9f9;
+	position: relative;
 
 	@media (max-width: 1280px) {
 		height: 760px;
