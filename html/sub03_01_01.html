@@ -11,10 +11,13 @@
 	<link rel="stylesheet" href="../inc/css/font.css">
 	<link rel="stylesheet" href="../inc/css/reset.css">
 	<link rel="stylesheet" href="../inc/css/common.css">
+
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
 		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 	<script src="../inc/js/common.js"></script>
 </head>
 
@@ -347,72 +350,80 @@
 									</li>
 								</ul>
 								<div class="contents on">
-									<div class="table half-type no-passage"><!--지문 없는 테이블 유형-->
+									<div class="table half-type"><!--지문 있는 테이블 유형-->
 										<div class="fix-head">
 											<span>이동</span>
 											<span>번호</span>
-											<span>시험지명</span>
-											<!--문제 유형-->
+											<span>문제 유형</span><!--시험지명-->
 											<span>문제 형태</span>
 											<span>난이도</span>
 										</div>
 										<div class="tbody">
 											<div class="scroll-inner">
 												<div class="test ui-sortable" id="table-1">
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>1</span>
-															<span>자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">하</span>
-															</span>
-														</a>
+													<!-- s: 지문 묶음 영역-->
+													<div class="depth-01">
+														<div class="dragHandle ui-sortable-handle drag-type02"><img
+																src="../images/common/ico_move_type01.png" alt=""></div>
+														<div class="col-group">
+															<div class="col depth-02">
+																<a href="javascript:;">
+																	<span class="dragHandle ui-sortable-handle drag-type01"><img
+																			src="../images/common/ico_move_type02.png" alt=""></span>
+																	<span>1</span>
+																	<span class="tit">자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
+																	<span>주관식</span>
+																	<span>
+																		<span class="que-badge">하</span>
+																	</span>
+																</a>
+															</div>
+															<div class="col depth-02">
+																<a href="javascript:;">
+																	<span class="dragHandle ui-sortable-handle drag-type01"><img
+																			src="../images/common/ico_move_type02.png" alt=""></span>
+																	<span>2</span>
+																	<span class="tit">자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
+																	<span>객관식</span>
+																	<span>
+																		<span class="que-badge">중</span>
+																	</span>
+																</a>
+															</div>
+															<div class="col depth-02">
+																<a href="javascript:;">
+																	<span class="dragHandle ui-sortable-handle drag-type01"><img
+																			src="../images/common/ico_move_type02.png" alt=""></span>
+																	<span>3</span>
+																	<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
+																	<span>주관식</span>
+																	<span>
+																		<span class="que-badge">중</span>
+																	</span>
+																</a>
+															</div>
+															<div class="col depth-02">
+																<a href="javascript:;">
+																	<span class="dragHandle ui-sortable-handle drag-type01"><img
+																			src="../images/common/ico_move_type02.png" alt=""></span>
+																	<span>4</span>
+																	<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
+																	<span>객관식</span>
+																	<span>
+																		<span class="que-badge">하</span>
+																	</span>
+																</a>
+															</div>
+														</div>
 													</div>
+													<!-- e : 지문 묶음 영역-->
 													<div class="col">
 														<a href="javascript:;">
 															<span class="dragHandle ui-sortable-handle"><img
 																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>2</span>
-															<span>자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
-															<span>객관식</span>
-															<span>
-																<span class="que-badge">중</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>3</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">중</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>4</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>객관식</span>
-															<span>
-																<span class="que-badge">하</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
+															<span></span>
 															<span>5</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
+															<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
 															<span>주관식</span>
 															<span>
 																<span class="que-badge">중</span>
@@ -423,8 +434,9 @@
 														<a href="javascript:;">
 															<span class="dragHandle ui-sortable-handle"><img
 																	src="../images/common/ico_move_type01.png" alt=""></span>
+															<span></span>
 															<span>6</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
+															<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
 															<span>주관식</span>
 															<span>
 																<span class="que-badge">중</span>
@@ -435,11 +447,12 @@
 														<a href="javascript:;">
 															<span class="dragHandle ui-sortable-handle"><img
 																	src="../images/common/ico_move_type01.png" alt=""></span>
+															<span></span>
 															<span>7</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
+															<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
 															<span>객관식</span>
 															<span>
-																<span class="que-badge">상</span>
+																<span class="que-badge">하</span>
 															</span>
 														</a>
 													</div>
@@ -447,80 +460,52 @@
 														<a href="javascript:;">
 															<span class="dragHandle ui-sortable-handle"><img
 																	src="../images/common/ico_move_type01.png" alt=""></span>
+															<span></span>
 															<span>8</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
+															<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
 															<span>주관식</span>
 															<span>
 																<span class="que-badge">중</span>
 															</span>
 														</a>
 													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>9</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>객관식</span>
-															<span>
-																<span class="que-badge">상</span>
-															</span>
-														</a>
+													<div class="depth-01">
+														<div class="dragHandle ui-sortable-handle drag-type02"><img
+																src="../images/common/ico_move_type01.png" alt=""></div>
+														<div class="col-group">
+															<div class="col depth-02">
+																<a href="javascript:;">
+																	<span class="dragHandle ui-sortable-handle drag-type01"><img
+																			src="../images/common/ico_move_type02.png" alt=""></span>
+																	<span>9</span>
+																	<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
+																	<span>객관식</span>
+																	<span>
+																		<span class="que-badge">상</span>
+																	</span>
+																</a>
+															</div>
+															<div class="col depth-02">
+																<a href="javascript:;">
+																	<span class="dragHandle ui-sortable-handle drag-type01"><img
+																			src="../images/common/ico_move_type02.png" alt=""></span>
+																	<span>10</span>
+																	<span class="tit">자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
+																	<span>주관식</span>
+																	<span>
+																		<span class="que-badge">하</span>
+																	</span>
+																</a>
+															</div>
+														</div>
 													</div>
 													<div class="col">
 														<a href="javascript:;">
 															<span class="dragHandle ui-sortable-handle"><img
 																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>10</span>
-															<span>자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">하</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>1</span>
-															<span>자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">하</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>2</span>
-															<span>자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
-															<span>객관식</span>
-															<span>
-																<span class="que-badge">중</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>3</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">중</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>4</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
+															<span></span>
+															<span>11</span>
+															<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
 															<span>객관식</span>
 															<span>
 																<span class="que-badge">하</span>
@@ -531,71 +516,12 @@
 														<a href="javascript:;">
 															<span class="dragHandle ui-sortable-handle"><img
 																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>5</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
+															<span></span>
+															<span>12</span>
+															<span class="tit">대단원&gt;중단원&gt;소단원&gt;토픽</span>
 															<span>주관식</span>
 															<span>
 																<span class="que-badge">중</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>6</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">중</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>7</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>객관식</span>
-															<span>
-																<span class="que-badge">하</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>8</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">중</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>9</span>
-															<span>대단원&gt;중단원&gt;소단원&gt;토픽</span>
-															<span>객관식</span>
-															<span>
-																<span class="que-badge">상</span>
-															</span>
-														</a>
-													</div>
-													<div class="col">
-														<a href="javascript:;">
-															<span class="dragHandle ui-sortable-handle"><img
-																	src="../images/common/ico_move_type01.png" alt=""></span>
-															<span>10</span>
-															<span>자연수의 성질&gt;소인수분해&gt;거듭제곱&gt;거듭제곱으로표현</span>
-															<span>주관식</span>
-															<span>
-																<span class="que-badge">하</span>
 															</span>
 														</a>
 													</div>

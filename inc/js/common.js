@@ -63,6 +63,25 @@ $(function () {
   });
   $("#table-1").disableSelection();
 
+  $(function () {
+    $(".depth-01")
+      .sortable({
+        items: ".col",
+        handle: ".drag-type01",
+        cancel: ".drag-type02",
+      })
+      .disableSelection();
+
+    $(".drag-type01")
+      .sortable({
+        items: ".col",
+        handle: ".drag-type02",
+        connectWith: ".drag-type01",
+        cancel: "",
+      })
+      .disableSelection();
+  });
+
   // paging
   let pageBtn = $(".page");
 
@@ -347,8 +366,8 @@ $(function () {
         .find(".select-wrap .scroll-inner")
         .append(
           '<span class="select-stu">' +
-            _txt +
-            '<button type="button" class="del"></button></span>'
+          _txt +
+          '<button type="button" class="del"></button></span>'
         );
     } else if (_this.parents("div").hasClass("col")) {
       _this
@@ -356,8 +375,8 @@ $(function () {
         .find(".select-wrap .scroll-inner")
         .append(
           '<span class="select-stu">' +
-            _txt +
-            '<button type="button" class="del"></button></span>'
+          _txt +
+          '<button type="button" class="del"></button></span>'
         );
     }
   });
