@@ -165,8 +165,6 @@ body {
 .btn-line.active {
   background-color: #f0f6ff;
   color: #5670dc;
-  font-size: 14px;
-  font-weight: 500;
   border: 1px solid #5670dc;
 }
 .btn-line.active.color01 {
@@ -900,7 +898,7 @@ input[type=checkbox]:checked + label::before {
 }
 @media (max-width: 1280px) {
   .unit-acc-wrap .scroll-inner {
-    height: 580px;
+    height: 545px;
   }
 }
 .unit-acc-wrap .acc-btn {
@@ -1029,8 +1027,7 @@ input[type=checkbox]:checked + label::before {
   font-size: 13px;
   font-weight: 400;
 }
-.view-box-wrap .unit-box-wrap .unit-box .unit-cnt input[type=checkbox]:checked + label .dep-btn,
-.view-box-wrap .unit-box-wrap .unit-box .unit-cnt input[type=checkbox]:checked + label span {
+.view-box-wrap .unit-box-wrap .unit-box .unit-cnt input[type=checkbox]:checked + label .dep-btn {
   color: #5670dc;
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt input[type=checkbox]:checked + label::before {
@@ -1171,7 +1168,7 @@ input[type=checkbox]:checked + label::before {
   flex-grow: 1;
   height: 36px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   text-align: center;
@@ -1572,10 +1569,6 @@ input[type=checkbox]:checked + label::before {
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .view-que-box + .view-que-box {
   margin-top: 20px;
 }
-.full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .view-que-box.active {
-  border: 2px solid #5670dc;
-  background-color: #fcfaff;
-}
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .que-top {
   display: flex;
   justify-content: space-between;
@@ -1677,7 +1670,7 @@ input[type=checkbox]:checked + label::before {
   margin-top: 10px;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .view-que .que-bottom .data-answer-area > div:first-child {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .view-que .que-bottom .que-info {
   display: flex;
