@@ -152,7 +152,6 @@ body {
 	&.active {
 		background-color: $color-main-skyblue;
 		color: $color-main-blue;
-		@include font(14px, 500);
 		border: 1px solid $color-main-blue;
 
 		//color 
@@ -1002,7 +1001,7 @@ input[type="checkbox"] {
 		height: 645px;
 
 		@media (max-width: 1280px) {
-			height: 580px;
+			height: 545px;
 		}
 	}
 
@@ -1149,8 +1148,7 @@ input[type="checkbox"] {
 
 					&:checked+label {
 
-						.dep-btn,
-						span {
+						.dep-btn {
 							color: $color-main-blue;
 						}
 
@@ -1306,7 +1304,7 @@ input[type="checkbox"] {
 						@include content-center-center;
 						flex-grow: 1;
 						height: 36px;
-						@include font(14px, 600);
+						@include font(14px, 400);
 						border: 1px solid $color-line-gray;
 						border-radius: 6px;
 						text-align: center;
@@ -1785,10 +1783,10 @@ input[type="checkbox"] {
 							}
 
 							/* view-que active */
-							&.active {
-								border: 2px solid $color-main-blue;
-								background-color: #fcfaff;
-							}
+							// &.active {
+							// 	border: 2px solid $color-main-blue;
+							// 	background-color: #fcfaff;
+							// }
 						}
 
 						.que-top {
@@ -1900,7 +1898,7 @@ input[type="checkbox"] {
 										margin-top: 10px;
 
 										&:first-child {
-											margin-top: 5px;
+											margin-top: 0px;
 										}
 									}
 								}
@@ -2207,6 +2205,8 @@ input[type="checkbox"] {
 						width: 100%;
 					}
 
+
+					//지문 없는 테이블 유형
 					&.no-passage {
 						.fix-head {
 							border-top: 1px solid $color-line-gray;
