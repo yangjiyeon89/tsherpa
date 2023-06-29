@@ -1571,10 +1571,6 @@ input[type=checkbox]:checked + label::before {
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .view-que-box + .view-que-box {
   margin-top: 20px;
 }
-.full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .view-que-box.active {
-  border: 2px solid #5670dc;
-  background-color: #fcfaff;
-}
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-que-list .que-top {
   display: flex;
   justify-content: space-between;
