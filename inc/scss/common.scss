@@ -1085,16 +1085,16 @@ input[type="checkbox"] {
 					position: relative;
 					padding: 10px 0 10px 25px;
 
-					&::before {
-						@include virtual-selector;
-						position: absolute;
-						top: 16px;
-						left: 0;
-						width: 16px;
-						height: 8px;
-						background: url("../../images/common/select_arrow.png") no-repeat;
-						transform: rotate(-90deg);
-					}
+					// &::before {
+					// 	@include virtual-selector;
+					// 	position: absolute;
+					// 	top: 16px;
+					// 	left: 0;
+					// 	width: 16px;
+					// 	height: 8px;
+					// 	background: url("../../images/common/select_arrow.png") no-repeat;
+					// 	transform: rotate(-90deg);
+					// }
 
 					&.title {
 						background-color: $color-main-skyblue;
@@ -1110,8 +1110,10 @@ input[type="checkbox"] {
 				}
 
 				.check-group.on {
-					&::before {
-						transform: rotate(0);
+					.dep-btn {
+						&::before {
+							transform: rotate(-90deg);
+						}
 					}
 				}
 
@@ -1156,6 +1158,20 @@ input[type="checkbox"] {
 							background: url(../../images/common/input_checkbox_check.png) no-repeat;
 							background-size: contain;
 						}
+					}
+				}
+
+				.dep-btn {
+					position: relative;
+
+					&::before {
+						@include virtual-selector;
+						position: absolute;
+						top: 8px;
+						left: -55px;
+						width: 16px;
+						height: 8px;
+						background: url("../../images/common/select_arrow.png") no-repeat;
 					}
 				}
 			}
@@ -1783,10 +1799,10 @@ input[type="checkbox"] {
 							}
 
 							/* view-que active */
-							// &.active {
-							// 	border: 2px solid $color-main-blue;
-							// 	background-color: #fcfaff;
-							// }
+							&.active {
+								border: 2px solid $color-main-blue;
+								background-color: #fcfaff;
+							}
 						}
 
 						.que-top {
@@ -2109,9 +2125,9 @@ input[type="checkbox"] {
 					background-color: #fff;
 					border-bottom: 1px solid $color-line-gray;
 
-					// &.active {
-					// 	border: 1px solid $color-main-blue
-					// }
+					&.active {
+						border: 1px solid $color-main-blue
+					}
 				}
 
 				span {
