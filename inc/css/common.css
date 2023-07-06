@@ -211,8 +211,8 @@ body {
 
 .btn-icon2 i {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -238,6 +238,12 @@ body {
 .preview {
   background: url(../../images/common/ico_preview.png);
   background-size: 22px !important;
+  background-size: contain;
+}
+
+.edit-type02 {
+  background: url(../../images/common/ico_edit_type02.png);
+  background-size: 21px 21px !important;
   background-size: contain;
 }
 
@@ -813,10 +819,10 @@ input[type=checkbox]:checked + label::before {
   box-sizing: border-box;
 }
 .tab-list-type01 .table span:nth-child(1) {
-  width: 5%;
+  width: 55%;
 }
 .tab-list-type01 .table span:nth-child(2) {
-  width: 55%;
+  width: 10%;
 }
 .tab-list-type01 .table span:nth-child(3) {
   width: 10%;
