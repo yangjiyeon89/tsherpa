@@ -18,6 +18,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
 	<script src="../inc/js/common.js"></script>
 </head>
 
@@ -764,47 +765,31 @@
 		</div>
 
 		<script>
+
+			let tipBtn = $('.btn-tip');
+
 			$(function () {
 
+				tipBtn.on('mouseover', function () {
+					let _this = $(this);
+					let _position = _this.parents('span').position().top;
 
-				let _leg = $('.view-que').length;
-				let arr = [];
+					console.log(this);
 
-				viewListFunc();
+					if (!_this.hasClass('active')) {
+						tipBtn.removeClass('active');
+						_this.addClass('active'); 
+					} else {
+						_this.removeClass('active');
+					}
+					if (_position > 710) {
+						_this.find('.tooltip').css('top', '-85px');
+						console.log(_position);
+						
+					}
+				});
 
-				$(".view-que-list").change(function () {
-					let _leg = $('.view-que').length;
-					let arr = [];
-
-					viewListFunc();
-				})
-
-				function viewListFunc() {
-					$('.col').on('click', function () {
-
-						let _idx = $(this).index();
-
-						for (var i = 0; i < _leg; i++) {
-							arr.push($('.view-que').eq(i).offset().top - 270);
-						}
-
-						console.log(arr);
-
-						$('.view-que-list').animate({
-							scrollTop: arr[_idx]
-						}, 400);
-
-						let _this = $(this);
-						if (!_this.hasClass('active')) {
-							_this.parents('.test.ui-sortable').find('.col').removeClass('active');
-							_this.addClass('active');
-							$('.view-que-box').removeClass('active');
-							$('.view-que-box').eq(_idx).addClass('active');
-						};
-
-					})
-				}
-			})
+			});
 		</script>
 </body>
 

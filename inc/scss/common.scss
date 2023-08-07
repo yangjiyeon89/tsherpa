@@ -2025,6 +2025,8 @@ input[type="checkbox"] {
 							.chapter {
 								color: $color-suba7;
 								@include font(14px, 400);
+								width: 100%;
+								@include text-overflow;
 							}
 						}
 					}
@@ -2075,7 +2077,7 @@ input[type="checkbox"] {
 					display: flex;
 					background-color: $color-main-skyblue;
 					border: 1px solid $color-main-blue;
-					overflow: hidden;
+					//overflow: hidden;
 
 					.col {
 						background-color: $color-main-skyblue;
@@ -2086,36 +2088,47 @@ input[type="checkbox"] {
 							}
 
 							&:nth-child(1) {
-								width: 10%;
+								width: 5%;
 							}
 
 							&:nth-child(2) {
-								width: 10%;
+								width: 8%;
 							}
 
 							&:nth-child(3) {
-								width: 52%;
+								width: 58%;
 								padding: 13px;
 								word-break: break-all;
 								justify-content: flex-start;
 								line-height: 20px;
+
+								.txt {
+									width: 100%;
+									min-width: 296px;
+									@include text-overflow;
+									display: block;
+
+									@media (max-width: 1280px){
+										min-width: 268px;
+									}
+								}
 							}
 
 							&:nth-child(4) {
-								width: 10%;
+								width: 12%;
 								padding: 0;
 								justify-content: center;
 							}
 
 							&:nth-child(5) {
-								width: 14%;
+								width: 13%;
 							}
 
 						}
 					}
 
 					.drag-type02 {
-						width: 55px;
+						width: 30px;
 						display: flex;
 						justify-content: center;
 						align-items: center;
@@ -2123,7 +2136,7 @@ input[type="checkbox"] {
 					}
 
 					.col-group {
-						width: calc(100% - 55px);
+						width: calc(100% - 30px);
 					}
 				}
 
@@ -2154,20 +2167,77 @@ input[type="checkbox"] {
 				&.half-type {
 					padding: 20px 0;
 
+					.tooltip-wrap {
+						position: relative;
+
+						button {
+							&:hover {
+								&+.tooltip {
+									display: inline-flex;
+								}
+							}
+						}
+
+						.btn-tip {
+							position: relative;
+							top: 1px;
+							width: 14px;
+							height: 16px;
+							margin-left: 15px;
+							background: url(../../images/common/ico_btn_tip.png) no-repeat;
+							background-size: contain;
+
+							&:hover {
+								background: url(../../images/common/ico_btn_tip_hover.png) no-repeat;
+							}
+						}
+					}
+
+					.tooltip {
+						@include content-center-center;
+						display: none;
+						position: absolute;
+						top: 30px;
+						left: -55px;
+						width: 130px;
+						height: auto;
+						padding: 10px;
+						color: #fff;
+						border-radius: 5px;
+						background-color: $color-main-blue;
+						z-index: 1;
+						font-size: 13px;
+
+						&::before {
+							@include virtual-selector;
+							position: absolute;
+							left: 72px;
+							top: -8px;
+							width: 8px;
+							height: 8px;
+							transform: rotate(180deg);
+							background: url(../../images/common/ico_arrow_tooltip_type01.png) no-repeat;
+						}
+
+						// &.active {
+						// 	display: block;
+						// }
+					}
+
 					.fix-head {
 						border-top: 1px solid $color-line-gray;
 
 						span {
 							&:nth-child(1) {
-								width: 18%;
+								width: 10%;
 							}
 
 							&:nth-child(2) {
-								width: 9%;
+								width: 7%;
 							}
 
 							&:nth-child(3) {
-								width: 49%;
+								width: 56%;
 								justify-content: center;
 								padding: 13px 0;
 							}
@@ -2194,31 +2264,38 @@ input[type="checkbox"] {
 
 					span {
 						&:nth-child(1) {
-							width: 10%;
+							width: 5%;
 						}
 
 						&:nth-child(2) {
-							width: 9.6%;
+							width: 5%;
 						}
 
 						&:nth-child(3) {
-							width: 9.4%;
+							width: 8%;
 						}
 
 						&:nth-child(4) {
-							width: 48%;
+							width: 58%;
 							padding: 13px;
 							word-break: break-all;
 							justify-content: flex-start;
 							line-height: 20px;
+
+							.txt {
+								width: 100%;
+								max-width: 296px;
+								@include text-overflow;
+								display: block;
+							}
 						}
 
 						&:nth-child(5) {
-							width: 9.6%;
+							width: 12%;
 						}
 
 						&:nth-child(6) {
-							width: 13.4%;
+							width: 12%;
 						}
 					}
 
@@ -2235,27 +2312,28 @@ input[type="checkbox"] {
 
 							span {
 								&:nth-child(1) {
-									width: 10%;
+									width: 8%;
 								}
 
 								&:nth-child(2) {
-									width: 10%;
+									width: 8%;
 								}
 
 								&:nth-child(3) {
-									width: 52%;
+									width: 60%;
 									justify-content: center;
 									padding: 13px 0;
+									display: flex;
 								}
 
 								&:nth-child(4) {
-									width: 14%;
+									width: 12%;
 									justify-content: center;
 									padding: 13px 0;
 								}
 
 								&:nth-child(5) {
-									width: 14%;
+									width: 12%;
 								}
 							}
 						}
@@ -2270,19 +2348,31 @@ input[type="checkbox"] {
 							}
 
 							&:nth-child(3) {
-								width: 50%;
+								width: 58%;
 								padding: 13px;
 								word-break: break-all;
 								justify-content: flex-start;
 								line-height: 20px;
+
+								.txt {
+									width: 100%;
+									min-width: 315px;
+									@include text-overflow;
+									display: block;
+
+									@media (max-width: 1280px) {
+										min-width: 290px;
+									}
+								}
 							}
 
 							&:nth-child(4) {
 								width: 10%;
+								justify-content: center;
 							}
 
 							&:nth-child(5) {
-								width: 10%;
+								width: 12%;
 							}
 						}
 					}
@@ -2291,6 +2381,11 @@ input[type="checkbox"] {
 
 				.dragHandle {
 					cursor: move;
+
+					img {
+						width: 13px;
+						height: 12px;
+					}
 				}
 
 				.myDragClass {
