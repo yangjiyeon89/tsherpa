@@ -1922,8 +1922,8 @@ input[type=checkbox]:checked + label::before {
   display: none;
   position: absolute;
   top: 30px;
-  left: -55px;
-  width: 130px;
+  left: -80px;
+  width: 180px;
   height: auto;
   padding: 10px;
   color: #fff;
@@ -1931,13 +1931,20 @@ input[type=checkbox]:checked + label::before {
   background-color: #5670dc;
   z-index: 1;
   font-size: 13px;
+  /* tooltip position change*/
+}
+.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip.active::before {
+  top: 100px;
+  transform: rotate(0deg);
+  left: 100px;
 }
 .full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip::before {
+  content: "";
   content: "";
   display: block;
   clear: both;
   position: absolute;
-  left: 72px;
+  left: 98px;
   top: -8px;
   width: 8px;
   height: 8px;
@@ -1951,7 +1958,7 @@ input[type=checkbox]:checked + label::before {
   width: 10%;
 }
 .full-pop-que .full-pop-wrap .view-box .table.half-type .fix-head span:nth-child(2) {
-  width: 7%;
+  width: 6%;
 }
 .full-pop-que .full-pop-wrap .view-box .table.half-type .fix-head span:nth-child(3) {
   width: 56%;
