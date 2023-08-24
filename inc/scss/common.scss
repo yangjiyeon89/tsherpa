@@ -134,7 +134,7 @@ body {
 		color: #fff;
 		padding-left: 0;
 		padding-right: 5px;
-
+l
 		&.done {
 			padding-right: 0;
 			background: $color-main-blue;
@@ -1913,9 +1913,11 @@ input[type="checkbox"] {
 									width: 100%;
 									@include layout-justify-end;
 									margin-top: 20px;
+									flex-direction: column;
 								}
 
 								.data-answer-area {
+									width: 100%;
 									&>div {
 										margin-top: 10px;
 
@@ -1926,13 +1928,17 @@ input[type="checkbox"] {
 								}
 
 								.que-info {
+									width: 100%;
 									display: flex;
 									align-items: flex-start;
+									flex-direction: column;
 									margin-bottom: 10px;
+									gap: 10px;
 
 									.answer {
-										padding-left: 42px;
-										text-indent: -42px;
+										width: 100%;
+										/*padding-left: 42px;
+										text-indent: -42px;*/
 
 										.label {
 											@include content-center-center;
@@ -1943,7 +1949,7 @@ input[type="checkbox"] {
 											@include font(13px, 600);
 											line-height: 20px;
 											color: #8a909e;
-											margin-right: 7px;
+											/*margin-right: 7px;*/
 											background-color: #fff;
 											text-indent: 0;
 
@@ -2145,7 +2151,8 @@ input[type="checkbox"] {
 					border-bottom: 1px solid $color-line-gray;
 
 					&.active {
-						border: 1px solid $color-main-blue
+						border: 1px solid $color-main-blue;
+						box-sizing: border-box;
 					}
 				}
 
