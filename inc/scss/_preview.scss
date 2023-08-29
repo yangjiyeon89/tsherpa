@@ -1,5 +1,8 @@
 #q-preview {
   width: 1200px;
+  .pop-content{
+    padding-bottom: 35px;
+  }
   img {
     width: auto;
     max-width: 458px;
@@ -17,7 +20,7 @@
       .example-area {
         width: 453px;
         margin-bottom: 15px;
-        padding: 0 45px;
+        padding: 0 55px 0 0;
 
         &:nth-child(2n) {
           &::after {
@@ -38,17 +41,24 @@
   .numbering {
     font-size: 20px;
     color: black;
+    padding-right: 6px;
+    &-numbers {
+      font-size: 15px;
+      font-weight: 500;
+    }
   }
   .item-question {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
   }
 
   .choice-contanier {
-    margin-bottom: 10px;
-    .answer-input li {
-      padding: 10px 0;
-      &:first-child {
-        padding-top: 0;
+    .answer-input{
+      margin-bottom:10px;
+      padding-left: 20px;
+      li {
+        padding-bottom: 10px;
       }
     }
   }
@@ -58,15 +68,25 @@
     color: #23a148;
     font-weight: 600;
     font-size: 15px;
-    margin-top: 10px;
     margin-bottom: 5px;
+    padding-right: 15px;
   }
 
   .answer-container {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    .answer-img{
+      width: 25px;
+      height: 25px;
+      background: lightgray;
+      display: inline-block;
+    }
   }
 
   .explain-answer {
+    display: flex;
+    align-items: flex-start;
     line-height: 1.5;
   }
 }
