@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "_mixin.scss";
 @import "_setting.scss";
+@import "_preview.scss";
 
 @import url(../css/font.css);
 
@@ -3509,4 +3510,3 @@ input[type="checkbox"] {
 .ui-sortable-helper {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-@import "_preview.scss";
