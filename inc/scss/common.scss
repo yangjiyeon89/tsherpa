@@ -897,19 +897,23 @@ input[type="checkbox"] {
     }
 
     span:nth-child(1) {
-      width: 55%;
+      width: 8%;
     }
 
     span:nth-child(2) {
-      width: 10%;
+      width: 44%;
     }
 
     span:nth-child(3) {
-      width: 10%;
+      width: 8%;
     }
 
     span:nth-child(4) {
-      width: 25%;
+      width: 8%;
+    }
+
+    span:nth-child(5) {
+      width: 32%;
     }
 
     .fix-head {
@@ -936,7 +940,7 @@ input[type="checkbox"] {
     }
 
     .tit {
-      padding: 13px 27px;
+      padding: 13px;
       justify-content: flex-start;
     }
 
@@ -1091,6 +1095,7 @@ input[type="checkbox"] {
         .check-group {
           position: relative;
           padding: 10px 0 10px 25px;
+          cursor: pointer;
 
           // &::before {
           // 	@include virtual-selector;
@@ -1139,7 +1144,7 @@ input[type="checkbox"] {
         input[type="checkbox"] {
           &+label {
             padding-left: 30px;
-            font-size: 16px;
+            @include font(15px, 500);
 
             &::before {
               width: 20px;
@@ -1170,6 +1175,7 @@ input[type="checkbox"] {
 
         .dep-btn {
           position: relative;
+          @include font(15px, 500);
 
           &::before {
             @include virtual-selector;
@@ -1179,6 +1185,10 @@ input[type="checkbox"] {
             width: 16px;
             height: 8px;
             background: url("../../images/common/select_arrow.png") no-repeat;
+          }
+
+          em {
+            color: $color-main-blue;
           }
         }
       }
@@ -1510,6 +1520,92 @@ input[type="checkbox"] {
         }
       }
 
+      .tooltip-wrap {
+        position: relative;
+
+        &.type01 {
+          margin-right: 5px;
+        }
+
+        button {
+          &:hover {
+            &+.tooltip {
+              display: inline-flex;
+            }
+          }
+        }
+
+        .btn-tip {
+          position: relative;
+          top: 1px;
+          width: 14px;
+          height: 16px;
+          margin-left: 15px;
+          background: url(../../images/common/ico_btn_tip.png) no-repeat;
+          background-size: contain;
+
+          &:hover {
+            background: url(../../images/common/ico_btn_tip_hover.png) no-repeat;
+          }
+        }
+      }
+
+      .tooltip {
+        @include content-center-center;
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: -80px;
+        width: 180px;
+        height: auto;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: $color-main-blue;
+        z-index: 1;
+        font-size: 13px;
+
+        &.type02 {
+          width: 75px;
+          left: -35px;
+
+          &::before {
+            left: 40px;
+          }
+        }
+
+        &.type03 {
+          width: 84px;
+          left: -28px;
+          top: px;
+
+          &::before {
+            left: 50px;
+          }
+        }
+
+        /* tooltip position change*/
+        &.active {
+          &::before {
+            top: 100px;
+            transform: rotate(0deg);
+            left: 100px;
+          }
+        }
+
+        &::before {
+          content: '';
+          @include virtual-selector;
+          position: absolute;
+          left: 98px;
+          top: -8px;
+          width: 8px;
+          height: 8px;
+          transform: rotate(180deg);
+          background: url(../../images/common/ico_arrow_tooltip_type01.png) no-repeat;
+        }
+      }
+
       .view-top {
         height: 80px;
         padding: 0 30px;
@@ -1517,10 +1613,27 @@ input[type="checkbox"] {
         border-bottom: 1px solid $color-line-gray;
 
         .paper-info {
-          span {
+          font-weight: 600;
+
+          .subject {
             @include font(22px, 800);
             color: $color-main-blue;
             margin-right: 5px;
+          }
+
+          .number {
+            @include font(20px, 600);
+            padding-left: 20px;
+            color: $color-suba7;
+
+            .tip-btn {
+              color: $color-suba7;
+            }
+
+            .blue {
+              color: $color-main-blue;
+              font-weight: 600;
+            }
           }
         }
 
@@ -2028,12 +2141,14 @@ input[type="checkbox"] {
                 color: #fff;
               }
 
-              &.oceanblue { //230908 추가
+              &.oceanblue {
+                //230908 추가
                 background-color: #D4F4FA;
                 color: #3DB7CC;
               }
 
-              &.pink {  //230908 추가
+              &.pink {
+                //230908 추가
                 background-color: #FFD8D8;
                 color: #F15F5F;
               }
@@ -2177,8 +2292,7 @@ input[type="checkbox"] {
 
         span {
           @include content-center-center;
-          // @include font(15px, 500);  //230908 수정
-          @include font(13px, 500); //230908 수정
+          @include font(15px, 500); //231020 수정
           color: #666;
 
           &.tit {
@@ -2194,68 +2308,8 @@ input[type="checkbox"] {
         &.half-type {
           padding: 20px 0;
 
-          .tooltip-wrap {
-            position: relative;
 
-            button {
-              &:hover {
-                &+.tooltip {
-                  display: inline-flex;
-                }
-              }
-            }
 
-            .btn-tip {
-              position: relative;
-              top: 1px;
-              width: 14px;
-              height: 16px;
-              margin-left: 15px;
-              background: url(../../images/common/ico_btn_tip.png) no-repeat;
-              background-size: contain;
-
-              &:hover {
-                background: url(../../images/common/ico_btn_tip_hover.png) no-repeat;
-              }
-            }
-          }
-
-          .tooltip {
-            @include content-center-center;
-            display: none;
-            position: absolute;
-            top: 30px;
-            left: -80px;
-            width: 180px;
-            height: auto;
-            padding: 10px;
-            color: #fff;
-            border-radius: 5px;
-            background-color: $color-main-blue;
-            z-index: 1;
-            font-size: 13px;
-
-            /* tooltip position change*/
-            &.active {
-              &::before {
-                top: 100px;
-                transform: rotate(0deg);
-                left: 100px;
-              }
-            }
-
-            &::before {
-              content: '';
-              @include virtual-selector;
-              position: absolute;
-              left: 98px;
-              top: -8px;
-              width: 8px;
-              height: 8px;
-              transform: rotate(180deg);
-              background: url(../../images/common/ico_arrow_tooltip_type01.png) no-repeat;
-            }
-          }
 
           .fix-head {
             border-top: 1px solid $color-line-gray;
@@ -2483,12 +2537,14 @@ input[type="checkbox"] {
               color: #fff;
             }
 
-            &.oceanblue { //230908 추가
+            &.oceanblue {
+              //230908 추가
               background-color: #D4F4FA;
               color: #3DB7CC;
             }
 
-            &.pink {  //230908 추가
+            &.pink {
+              //230908 추가
               background-color: #FFD8D8;
               color: #F15F5F;
             }
