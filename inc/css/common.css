@@ -25,6 +25,7 @@
   padding-bottom: 35px;
 }
 #q-preview img {
+  width: auto;
   max-width: 458px;
 }
 #q-preview .pop-inner {
@@ -87,9 +88,9 @@
   display: flex;
 }
 #q-preview .answer-container .answer-img {
-  /*width: 25px;
+  width: 25px;
   height: 25px;
-  background: lightgray; */
+  background: lightgray;
   display: inline-block;
 }
 #q-preview .explain-answer {
@@ -899,16 +900,19 @@ input[type=checkbox]:checked + label::before {
   box-sizing: border-box;
 }
 .tab-list-type01 .table span:nth-child(1) {
-  width: 55%;
+  width: 8%;
 }
 .tab-list-type01 .table span:nth-child(2) {
-  width: 10%;
+  width: 44%;
 }
 .tab-list-type01 .table span:nth-child(3) {
-  width: 10%;
+  width: 8%;
 }
 .tab-list-type01 .table span:nth-child(4) {
-  width: 25%;
+  width: 8%;
+}
+.tab-list-type01 .table span:nth-child(5) {
+  width: 32%;
 }
 .tab-list-type01 .table .fix-head {
   border-bottom: 1px solid #e0e0e0;
@@ -928,7 +932,7 @@ input[type=checkbox]:checked + label::before {
   background-color: #fff;
 }
 .tab-list-type01 .table .tit {
-  padding: 13px 27px;
+  padding: 13px;
   justify-content: flex-start;
 }
 .tab-list-type01 .table .btn-wrap button + button {
@@ -1062,6 +1066,7 @@ input[type=checkbox]:checked + label::before {
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt .check-group {
   position: relative;
   padding: 10px 0 10px 25px;
+  cursor: pointer;
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt .check-group.title {
   background-color: #f0f6ff;
@@ -1087,7 +1092,8 @@ input[type=checkbox]:checked + label::before {
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt input[type=checkbox] + label {
   padding-left: 30px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt input[type=checkbox] + label::before {
   width: 20px;
@@ -1110,6 +1116,8 @@ input[type=checkbox]:checked + label::before {
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt .dep-btn {
   position: relative;
+  font-size: 15px;
+  font-weight: 500;
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt .dep-btn::before {
   content: "";
@@ -1121,6 +1129,9 @@ input[type=checkbox]:checked + label::before {
   width: 16px;
   height: 8px;
   background: url("../../images/common/select_arrow.png") no-repeat;
+}
+.view-box-wrap .unit-box-wrap .unit-box .unit-cnt .dep-btn em {
+  color: #5670dc;
 }
 .view-box-wrap .type-box-wrap {
   flex: 1;
@@ -1414,6 +1425,78 @@ input[type=checkbox]:checked + label::before {
   color: #666;
   margin-top: 20px;
 }
+.full-pop-que .full-pop-wrap .view-box .tooltip-wrap {
+  position: relative;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip-wrap.type01 {
+  margin-right: 5px;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip-wrap button:hover + .tooltip {
+  display: inline-flex;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip-wrap .btn-tip {
+  position: relative;
+  top: 1px;
+  width: 14px;
+  height: 16px;
+  margin-left: 15px;
+  background: url(../../images/common/ico_btn_tip.png) no-repeat;
+  background-size: contain;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip-wrap .btn-tip:hover {
+  background: url(../../images/common/ico_btn_tip_hover.png) no-repeat;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  width: 180px;
+  height: auto;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #5670dc;
+  z-index: 1;
+  font-size: 13px;
+  /* tooltip position change*/
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip.type02 {
+  width: 75px;
+  left: -35px;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip.type02::before {
+  left: 40px;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip.type03 {
+  width: 84px;
+  left: -28px;
+  top: px;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip.type03::before {
+  left: 50px;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip.active::before {
+  top: 100px;
+  transform: rotate(0deg);
+  left: 100px;
+}
+.full-pop-que .full-pop-wrap .view-box .tooltip::before {
+  content: "";
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 98px;
+  top: -8px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(180deg);
+  background: url(../../images/common/ico_arrow_tooltip_type01.png) no-repeat;
+}
 .full-pop-que .full-pop-wrap .view-box .view-top {
   height: 80px;
   padding: 0 30px;
@@ -1422,11 +1505,27 @@ input[type=checkbox]:checked + label::before {
   align-items: center;
   border-bottom: 1px solid #e0e0e0;
 }
-.full-pop-que .full-pop-wrap .view-box .view-top .paper-info span {
+.full-pop-que .full-pop-wrap .view-box .view-top .paper-info {
+  font-weight: 600;
+}
+.full-pop-que .full-pop-wrap .view-box .view-top .paper-info .subject {
   font-size: 22px;
   font-weight: 800;
   color: #5670dc;
   margin-right: 5px;
+}
+.full-pop-que .full-pop-wrap .view-box .view-top .paper-info .number {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+  color: #a7a7a7;
+}
+.full-pop-que .full-pop-wrap .view-box .view-top .paper-info .number .tip-btn {
+  color: #a7a7a7;
+}
+.full-pop-que .full-pop-wrap .view-box .view-top .paper-info .number .blue {
+  color: #5670dc;
+  font-weight: 600;
 }
 .full-pop-que .full-pop-wrap .view-box .view-top .btn-research {
   margin-right: 330px;
@@ -1982,7 +2081,7 @@ input[type=checkbox]:checked + label::before {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: #666;
 }
@@ -1994,60 +2093,6 @@ input[type=checkbox]:checked + label::before {
 }
 .full-pop-que .full-pop-wrap .view-box .table.half-type {
   padding: 20px 0;
-}
-.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip-wrap {
-  position: relative;
-}
-.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip-wrap button:hover + .tooltip {
-  display: inline-flex;
-}
-.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip-wrap .btn-tip {
-  position: relative;
-  top: 1px;
-  width: 14px;
-  height: 16px;
-  margin-left: 15px;
-  background: url(../../images/common/ico_btn_tip.png) no-repeat;
-  background-size: contain;
-}
-.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip-wrap .btn-tip:hover {
-  background: url(../../images/common/ico_btn_tip_hover.png) no-repeat;
-}
-.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  position: absolute;
-  top: 30px;
-  left: -80px;
-  width: 180px;
-  height: auto;
-  padding: 10px;
-  color: #fff;
-  border-radius: 5px;
-  background-color: #5670dc;
-  z-index: 1;
-  font-size: 13px;
-  /* tooltip position change*/
-}
-.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip.active::before {
-  top: 100px;
-  transform: rotate(0deg);
-  left: 100px;
-}
-.full-pop-que .full-pop-wrap .view-box .table.half-type .tooltip::before {
-  content: "";
-  content: "";
-  display: block;
-  clear: both;
-  position: absolute;
-  left: 98px;
-  top: -8px;
-  width: 8px;
-  height: 8px;
-  transform: rotate(180deg);
-  background: url(../../images/common/ico_arrow_tooltip_type01.png) no-repeat;
 }
 .full-pop-que .full-pop-wrap .view-box .table.half-type .fix-head {
   border-top: 1px solid #e0e0e0;

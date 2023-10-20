@@ -31,8 +31,23 @@
 				<div class="view-box">
 					<div class="view-top">
 						<div class="paper-info">
-							<span>수학 1</span>
-							이준열(2015) 수정
+							<span class="subject">수학 1</span>
+							<span>이준열(2015)</span>
+							<span class="number">
+								<span class="tooltip-wrap">
+									<button class="tip-btn blue">00</button>
+									<span class="tooltip type02">
+										<div class="tool-type01">선택한 문항수</div>
+									</span>
+								</span>
+								<span>/</span>
+								<span class="tooltip-wrap">
+									<button class="tip-btn">90</button>
+									<span class="tooltip type02">
+										<div class="tool-type01">최대 문항수</div>
+									</span>
+								</span>
+							</span>
 						</div>
 						<div class="btn-wrap">
 							<button class="btn-icon"><i class="edit"></i>선택한 시험지 편집하기</button>
@@ -45,79 +60,166 @@
 								<button type="button" class="acc-btn">Ⅰ. 수와 연산(대단원)</button>
 								<div class="cnt">
 									<div class="table">
+										<!-- s 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<!-- s 230706 선택 삭제, 편집하기 추가 -->
 										<div class="fix-head">
+											<span>선택</span>
 											<span>시험지명</span>
+											<span>문항수</span>
 											<span>미리보기</span>
-											<span>편집하기</span>
 											<span>다운로드</span>
 										</div>
 										<!-- e 230706 선택 삭제, 편집하기 추가 -->
+										<!-- e 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<div class="tbody">
 											<div class="col">
+												<span><input type="checkbox" id="chk01_01"><label for="chk01_01"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
+												<span><input type="checkbox" id="chk01_02"><label for="chk01_02"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
+												<span><input type="checkbox" id="chk01_03"><label for="chk01_03"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (2) 최대공약수(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
+												<span><input type="checkbox" id="chk01_04"><label for="chk01_04"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈 > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
+												<span><input type="checkbox" id="chk01_05"><label for="chk01_05"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 3회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
+												<span><input type="checkbox" id="chk01_06"><label for="chk01_06"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 4회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 										</div>
@@ -126,85 +228,166 @@
 								<button type="button" class="acc-btn">Ⅱ. 문자와 식</button>
 								<div class="cnt">
 									<div class="table">
+										<!-- s 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<!-- s 230706 선택 삭제, 편집하기 추가 -->
 										<div class="fix-head">
+											<span>선택</span>
 											<span>시험지명</span>
+											<span>문항수</span>
 											<span>미리보기</span>
-											<span>편집하기</span>
 											<span>다운로드</span>
 										</div>
 										<!-- e 230706 선택 삭제, 편집하기 추가 -->
+										<!-- e 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<div class="tbody">
 											<div class="col">
-												<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk02_01"><label for="chk02_01"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
-												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 2회</span>
-												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
-															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
-												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
-												</span>
-											</div>
-											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk02_02"><label for="chk02_02"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (2) 최대공약수(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-												<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk02_03"><label for="chk02_03"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈 > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk02_04"><label for="chk02_04"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 3회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk02_05"><label for="chk02_05"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 4회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
+												</span>
+											</div>
+											<div class="col">
+												<span><input type="checkbox" id="chk02_06"><label for="chk02_06"></label></span>
+												<!--231026 checkbox 추가-->
+												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 4회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
+												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
+															class="preview"></i></button></span>
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
+												<span>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 										</div>
@@ -213,86 +396,166 @@
 								<button type="button" class="acc-btn">Ⅲ. 좌표평면과 그래프</button>
 								<div class="cnt">
 									<div class="table">
+										<!-- s 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<!-- s 230706 선택 삭제, 편집하기 추가 -->
 										<div class="fix-head">
+											<span>선택</span>
 											<span>시험지명</span>
+											<span>문항수</span>
 											<span>미리보기</span>
-											<span>편집하기</span>
 											<span>다운로드</span>
 										</div>
 										<!-- e 230706 선택 삭제, 편집하기 추가 -->
+										<!-- e 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<div class="tbody">
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk03_01"><label for="chk03_01"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
-															class="preview"></i></button>
-															</span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+															class="preview"></i></button></span>
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk03_02"><label for="chk03_02"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk03_03"><label for="chk03_03"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (2) 최대공약수(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk03_04"><label for="chk03_04"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈 > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk03_05"><label for="chk03_05"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 3회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk03_06"><label for="chk03_06"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 4회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 										</div>
@@ -301,85 +564,166 @@
 								<button type="button" class="acc-btn">Ⅳ. 도형의 기초</button>
 								<div class="cnt">
 									<div class="table">
+										<!-- s 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<!-- s 230706 선택 삭제, 편집하기 추가 -->
 										<div class="fix-head">
+											<span>선택</span>
 											<span>시험지명</span>
+											<span>문항수</span>
 											<span>미리보기</span>
-											<span>편집하기</span>
 											<span>다운로드</span>
 										</div>
 										<!-- e 230706 선택 삭제, 편집하기 추가 -->
+										<!-- e 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<div class="tbody">
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk04_01"><label for="chk04_01"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk04_02"><label for="chk04_02"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk04_03"><label for="chk04_03"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (2) 최대공약수(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk04_04"><label for="chk04_04"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈 > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk04_05"><label for="chk04_05"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 3회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk04_06"><label for="chk04_06"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 4회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 										</div>
@@ -388,85 +732,166 @@
 								<button type="button" class="acc-btn">Ⅴ. 도형의 성질</button>
 								<div class="cnt">
 									<div class="table">
+										<!-- s 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<!-- s 230706 선택 삭제, 편집하기 추가 -->
 										<div class="fix-head">
+											<span>선택</span>
 											<span>시험지명</span>
+											<span>문항수</span>
 											<span>미리보기</span>
-											<span>편집하기</span>
 											<span>다운로드</span>
 										</div>
 										<!-- e 230706 선택 삭제, 편집하기 추가 -->
+										<!-- e 231026 선택, 문항수 추가, 편집하기 삭제 -->
 										<div class="tbody">
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk05_01"><label for="chk05_01"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk05_02"><label for="chk05_02"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (1) 소인수분해(소단원) > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk05_03"><label for="chk05_03"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">1. 소인수분해(중단원) > (2) 최대공약수(소단원) > 1회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk05_04"><label for="chk05_04"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈 > 2회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk05_05"><label for="chk05_05"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 3회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 											<div class="col">
-											<!--230706 checkbox 삭제-->
+												<span><input type="checkbox" id="chk05_06"><label for="chk05_06"></label></span>
+												<!--231026 checkbox 추가-->
 												<span class="tit">2. 정수와 유리수(중단원) > (4) 정수와 유리수의 곱셈(소단원) > 4회</span>
+												<span>15</span><!-- 231023 문항수 추가 -->
 												<span><button type="button" class="pop-btn btn-icon2" data-pop="prev-pop"><i
 															class="preview"></i></button></span>
-															<span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span><!--230706 편집하기 버튼 추가-->
+												<!-- <span><button type="button" class="btn-icon2"><i class="edit-type02"></i></button></span> -->
+												<!--231026 편집하기 버튼 삭제-->
 												<span>
-													<div class="btn-wrap"><button type="button" class="btn-default">전체</button> <button
-															type="button" class="btn-default">문제</button> <button type="button" class="btn-default">정답
-															+ 해설</button></div>
+													<!--s 231026 문항분류표, tooltip 추가-->
+													<div class="btn-wrap">
+														<div class="tooltip-wrap type01">
+															<button class="btn-default">전체</button>
+															<div class="tooltip type03">
+																<div class="tool-type01">문제+정답+해설</div>
+															</div>
+														</div></button>
+														<button type="button" class="btn-default">문제</button>
+														<button type="button" class="btn-default">정답 + 해설</button>
+														<button type="button" class="btn-default">문항분류표</button>
+													</div>
+													<!--e 231026 문항분류표, tooltip 추가-->
 												</span>
 											</div>
 										</div>
@@ -502,7 +927,7 @@
 								<div class="example-area">
 									<div class="example-box">
 										<div class="item-question">
-											<span class="numbering">1.</span> 
+											<span class="numbering">1.</span>
 											<img src="../images/common/sampling-question.png" alt="">
 										</div>
 
@@ -528,7 +953,8 @@
 
 										<div class="answer-container">
 											<span class="answer-tit">(정답)</span>
-											<div class="answer-img" style="height:25px; background:lightgray"><img src="../images/common/answer-img.png" alt=""></div>
+											<div class="answer-img" style="height:25px; background:lightgray"><img
+													src="../images/common/answer-img.png" alt=""></div>
 										</div>
 
 										<div class="explain-answer">
@@ -567,7 +993,8 @@
 
 										<div class="answer-container">
 											<span class="answer-tit">(정답)</span>
-											<div class="answer-img" style="height:25px; background:lightgray"><img src="../images/common/answer-img.png" alt=""></div>
+											<div class="answer-img" style="height:25px; background:lightgray"><img
+													src="../images/common/answer-img.png" alt=""></div>
 										</div>
 
 										<div class="explain-answer">
@@ -580,7 +1007,7 @@
 								<div class="example-area">
 									<div class="example-box">
 										<div class="item-question">
-											<span class="numbering">1.</span> 
+											<span class="numbering">1.</span>
 											<img src="../images/common/sampling-question.png" alt="">
 										</div>
 
@@ -606,7 +1033,8 @@
 
 										<div class="answer-container">
 											<span class="answer-tit">(정답)</span>
-											<div class="answer-img" style="height:25px; background:lightgray"><img src="../images/common/answer-img.png" alt=""></div>
+											<div class="answer-img" style="height:25px; background:lightgray"><img
+													src="../images/common/answer-img.png" alt=""></div>
 										</div>
 
 										<div class="explain-answer">
@@ -619,7 +1047,7 @@
 								<div class="example-area">
 									<div class="example-box">
 										<div class="item-question">
-											<span class="numbering">1.</span>	
+											<span class="numbering">1.</span>
 											<img src="../images/common/sampling-question.png" alt="">
 										</div>
 
@@ -645,7 +1073,8 @@
 
 										<div class="answer-container">
 											<span class="answer-tit">(정답)</span>
-											<div class="answer-img" style="height:25px; background:lightgray"><img src="../images/common/answer-img.png" alt=""></div>
+											<div class="answer-img" style="height:25px; background:lightgray"><img
+													src="../images/common/answer-img.png" alt=""></div>
 										</div>
 
 										<div class="explain-answer">
@@ -654,8 +1083,8 @@
 										</div>
 									</div>
 								</div>
-								
-							</div>				
+
+							</div>
 						</div>
 					</div>
 				</div>

@@ -4,7 +4,7 @@
     padding-bottom: 35px;
   }
   img {
-    // width: auto; //230908 수정
+    width: auto; //230908 수정
     max-width: 458px;
   }
   .pop-inner {
@@ -77,9 +77,9 @@
     display: flex;
     // align-items: center; //230908 수정
     .answer-img{
-      /*width: 25px;
+      width: 25px;
       height: 25px;
-      background: lightgray; */ //230908 수정
+      background: lightgray; //230908 수정
       display: inline-block;
     }
   }

@@ -61,7 +61,7 @@
 													<div class="check-group">
 														<input type="checkbox" id="chk01_02" class="que-allCheck depth01">
 														<label for="chk01_02">
-															<button type="button" class="dep-btn active">(1) 시의 아름다움</button>
+															<button type="button" class="dep-btn active">(1) 시의 아름다움 <em>(56)</em></button>
 														</label>
 													</div>
 													<div class="depth03">
@@ -354,6 +354,24 @@
 				}
 
 				depBtn.on('click', depFunc);
+
+				// let checkGroup = $('.check-group');
+
+				// function checkGroupFunc() {
+				// 	let _this = $(this);
+
+				// 	if (!_this.hasClass('active')) {
+				// 		_this.addClass('active');
+				// 		_this.next('div').stop().slideUp('fast');
+				// 	} else {
+				// 		_this.removeClass('active');
+				// 		_this.next('div').stop().slideDown('fast');
+				// 	}
+
+				// 	_this.toggleClass('on');
+				// }
+
+				// checkGroup.on('click', checkGroupFunc);
 
 
 				// que-checkbox
