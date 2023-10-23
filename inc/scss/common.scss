@@ -189,7 +189,7 @@ body {
 }
 
 .btn-icon {
-  padding: 10px 20px;
+  padding: 7px 20px;
   background-color: $color-main-blue;
   color: #fff;
   border-radius: 6px;
@@ -345,6 +345,37 @@ body {
         height: 36px;
         margin-bottom: 0;
       }
+    }
+  }
+
+  &.save-type {
+    width: 660px;
+    height: 316px;
+    text-align: center;
+
+    .pop-content {
+      padding: 30px 0 45px;
+    }
+
+    .txt {
+      @include font(18px, 600);
+    }
+
+    .txt-box {
+      padding: 20px 0 50px;
+
+      .txt {
+        font-weight: 400;
+      }
+    }
+
+    .save-wrap {
+      img {
+        width: 113px;
+        height: 109px;
+      }
+
+
     }
   }
 
@@ -564,10 +595,15 @@ body {
   .pop-header {
     @include layout-center-center;
     padding: 15px 50px;
-    @include font(20px, 500);
+    @include font(18px, 500);
     color: #fff;
     background: $color-main-blue;
     text-align: center;
+
+    em {
+      color: #fff000;
+      font-weight: 600;
+    }
 
     .pop-close {
       position: absolute;
@@ -620,7 +656,7 @@ body {
       .btn-wrap {
         display: flex;
         justify-content: right;
-        padding: 20px 50px;
+        padding: 10px 50px;
 
 
         @media (max-width: 1280px) {
@@ -634,6 +670,16 @@ body {
         border: 1px solid #ccc;
         border-radius: 6px;
 
+        .example-box {
+          .img-box {
+            min-width: 220px;
+            display: block
+          }
+        }
+
+        .layout-wrap {
+          @include layout-justify-center;
+        }
 
         @media (max-width: 1280px) {
           margin: 0 20px;
@@ -802,14 +848,14 @@ input[type="checkbox"] {
 
     &::after {
       position: absolute;
-      right: 15px;
+      right: 14px;
       top: 50%;
       content: "";
       display: block;
       clear: both;
-      width: 13px;
-      height: 7px;
-      margin-top: -4px;
+      width: 11px;
+      height: 6px;
+      margin-top: -3px;
       background: url(../../images/common/select_arrow.png) no-repeat;
       background-size: contain;
     }
@@ -1000,6 +1046,55 @@ input[type="checkbox"] {
   }
 }
 
+.tab-menu-type02 {
+  padding: 20px 30px 0;
+  width: 100%;
+
+  li {
+    width: 100%;
+    border: 1px solid $color-line-gray;
+    display: flex;
+    flex: 1;
+    border-radius: 8px;
+    height: 45px;
+
+    &:nth-child(2) {
+      border-radius: 0;
+    }
+
+    &:nth-child(3) {
+      border-radius: 0;
+    }
+
+    &:first-child {
+      border-right: 0;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    &:last-child {
+      border-left: 0;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    &.active {
+      background-color: $color-main-blue;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    a {
+      width: 100%;
+      font-weight: 400;
+    }
+
+
+  }
+}
+
 /* 단원 아코디언 */
 .unit-acc-wrap {
   border: 1px solid $color-line-gray;
@@ -1117,6 +1212,12 @@ input[type="checkbox"] {
 
             .title-chk {
               padding-left: 35px;
+            }
+          }
+
+          span {
+            em {
+              color: $color-main-blue;
             }
           }
         }
@@ -1527,6 +1628,10 @@ input[type="checkbox"] {
           margin-right: 5px;
         }
 
+        &.type02 {
+          margin-right: 8px;
+        }
+
         button {
           &:hover {
             &+.tooltip {
@@ -1566,18 +1671,18 @@ input[type="checkbox"] {
         font-size: 13px;
 
         &.type02 {
-          width: 75px;
-          left: -35px;
+          width: 70px;
+          left: -38px;
 
           &::before {
-            left: 40px;
+            left: 45px;
           }
         }
 
         &.type03 {
           width: 84px;
           left: -28px;
-          top: px;
+          top: 40px;
 
           &::before {
             left: 50px;
@@ -1639,7 +1744,7 @@ input[type="checkbox"] {
 
         .btn-research {
           // margin-right: 220px; //230908 수정
-          margin-right: 330px; //230908 수정
+          margin-right: 200px; //231026 수정
         }
 
         .btn-wrap {
@@ -1807,12 +1912,20 @@ input[type="checkbox"] {
             }
 
             .select-wrap {
+              &:last-child {
+                .select-btn {
+                  width: 130px;
+                }
+              }
+
               .select-btn {
-                width: 130px;
+                width: 150px;
               }
 
               &+.select-wrap {
                 margin-left: 10px;
+
+
 
                 .select-btn {
                   width: 130px;
@@ -1923,9 +2036,9 @@ input[type="checkbox"] {
               /* view-que active */
               &.active {
                 //border: 2px solid $color-main-blue; //230908 수정
-                border: 2px solid #21b8ff; //230908 수정
+                border: 2px solid #7a02cf; //231026 수정
                 //background-color: #fcfaff; //230908 수정
-                background-color: #fdfeff; //230908 수정
+                background-color: #faf4ff; //231026 수정
               }
             }
 
@@ -1961,11 +2074,14 @@ input[type="checkbox"] {
                 }
 
                 .btn-delete {
-                  width: 21px;
-                  height: 21px;
+                  width: 18px;
+                  height: 22px;
                   background: url(../../images/common/ico_btn_del.png) no-repeat;
                   background-size: contain;
 
+                  &:hover {
+                    background: url(../../images/common/ico_btn_del_hover.png) no-repeat;
+                  }
                 }
               }
 
@@ -2017,6 +2133,12 @@ input[type="checkbox"] {
                 justify-content: flex-end;
                 align-items: flex-end;
                 flex-wrap: wrap;
+
+                &.passage-type {
+                  .btn-wrap {
+                    margin-top: 14px;
+                  }
+                }
 
                 .passage-area {
                   width: 100%;
@@ -2284,9 +2406,9 @@ input[type="checkbox"] {
 
           &.active {
             //border: 1px solid $color-main-blue; //230908 수정
-            border: 1px solid #21b8ff; //230908 수정
+            border: 1px solid #7a02cf; //231026 수정
             box-sizing: border-box;
-            background-color: #f2fbff; //230908 수정
+            background-color: #faf4ff; //231026 수정
           }
         }
 
