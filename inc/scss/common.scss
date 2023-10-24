@@ -665,6 +665,19 @@ body {
         }
       }
 
+      .scroll-inner {
+        // &::after {
+        //   @include virtual-selector;
+        //   position: absolute;
+        //   top: 0;
+        //   left: 50%;
+        //   transform: translate(-50%, 22%);
+        //   width: 1px;
+        //   height: 80%;
+        //   background-color: $color-suba7;
+        // }
+      }
+
       .view-box {
         margin: 0 50px;
         border: 1px solid #ccc;
@@ -672,13 +685,47 @@ body {
 
         .example-box {
           .img-box {
-            min-width: 220px;
-            display: block
+            max-width: 220px;
+            display: block;
+            margin: 5px auto;
           }
         }
 
         .layout-wrap {
-          @include layout-justify-center;
+          @include layout-justify-start;
+        
+          &.type-noline {
+            .view-data {
+              &:nth-child(2n) {
+                &::after {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .view-data {
+            &:nth-child(2n) {
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1px;
+                height: 100%;
+                background-color: #ccc;
+              }
+            }
+          }
+        }
+
+        .table-wrap {
+          text-align: center;
+
+          img {
+            width: auto;
+            max-width: auto;
+          }
         }
 
         @media (max-width: 1280px) {
@@ -809,6 +856,7 @@ input[type="checkbox"] {
   &+label {
     padding-left: 27px;
     font-size: 14px;
+    cursor: pointer;
 
     &::before {
       width: 20px;
