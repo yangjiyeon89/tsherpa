@@ -19,14 +19,10 @@
 	*/
 @import url(../css/font.css);
 #q-preview {
-  width: 660px;
+  width: 700px;
 }
 #q-preview .pop-content {
   padding-bottom: 30px;
-}
-#q-preview img {
-  width: auto;
-  max-width: 220px;
 }
 #q-preview .pop-inner {
   width: 100%;
@@ -45,6 +41,10 @@
 #q-preview .pop-inner .scroll-inner .example-area {
   width: 250px;
   margin-bottom: 15px;
+}
+#q-preview .pop-inner .scroll-inner .example-area img {
+  width: auto;
+  max-width: 220px;
 }
 #q-preview .numbering {
   color: black;
@@ -69,15 +69,15 @@
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 5px;
-  padding-right: 15px;
+  padding-right: 5px;
 }
 #q-preview .answer-container {
   margin-bottom: 10px;
   display: flex;
 }
 #q-preview .answer-container .answer-img {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   background: lightgray;
   display: inline-block;
 }
@@ -675,13 +675,33 @@ l .btn-step.next.done {
   border-radius: 6px;
 }
 .pop-wrap.prev-type .pop-inner .view-box .example-box .img-box {
-  min-width: 220px;
+  max-width: 220px;
   display: block;
+  margin: 5px auto;
 }
 .pop-wrap.prev-type .pop-inner .view-box .layout-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+.pop-wrap.prev-type .pop-inner .view-box .layout-wrap.type-noline .view-data:nth-child(2n)::after {
+  display: none;
+}
+.pop-wrap.prev-type .pop-inner .view-box .layout-wrap .view-data:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+}
+.pop-wrap.prev-type .pop-inner .view-box .table-wrap {
+  text-align: center;
+}
+.pop-wrap.prev-type .pop-inner .view-box .table-wrap img {
+  width: auto;
+  max-width: auto;
 }
 @media (max-width: 1280px) {
   .pop-wrap.prev-type .pop-inner .view-box {
@@ -806,6 +826,7 @@ input[type=checkbox] + label::before {
 input[type=checkbox] + label {
   padding-left: 27px;
   font-size: 14px;
+  cursor: pointer;
 }
 input[type=checkbox] + label::before {
   width: 20px;
