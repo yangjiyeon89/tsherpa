@@ -611,7 +611,21 @@ l .btn-step.next.done {
   background: #5670dc;
   text-align: center;
 }
-.pop-wrap .pop-header em {
+.pop-wrap .pop-header .tit-top {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pop-wrap .pop-header .tit-top span {
+  max-width: 385px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+}
+.pop-wrap .pop-header .tit-top em {
   color: #fff000;
   font-weight: 600;
 }
@@ -2180,7 +2194,7 @@ input[type=checkbox]:checked + label::before {
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: #666;
 }
 .full-pop-que .full-pop-wrap .view-box .table span.tit {

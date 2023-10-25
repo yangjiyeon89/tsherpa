@@ -600,10 +600,21 @@ body {
     background: $color-main-blue;
     text-align: center;
 
-    em {
-      color: #fff000;
-      font-weight: 600;
+    .tit-top {
+      @include layout-center;
+      gap: 5px;
+      span {
+        max-width: 385px;
+        display: inline-block;
+        @include text-overflow;
+      }
+      em {
+        color: #fff000;
+        font-weight: 600;
+      }
     }
+
+
 
     .pop-close {
       position: absolute;
@@ -693,7 +704,7 @@ body {
 
         .layout-wrap {
           @include layout-justify-start;
-        
+
           &.type-noline {
             .view-data {
               &:nth-child(2n) {
@@ -2462,7 +2473,7 @@ input[type="checkbox"] {
 
         span {
           @include content-center-center;
-          @include font(15px, 500); //231020 수정
+          @include font(15px, 400); //231026 수정
           color: #666;
 
           &.tit {
