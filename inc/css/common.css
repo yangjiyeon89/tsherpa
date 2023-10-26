@@ -277,6 +277,12 @@ l .btn-step.next.done {
   background-repeat: no-repeat;
   background-position: center;
 }
+.btn-icon.type-white {
+  background-color: #fff;
+  border: 1px solid #5670dc;
+  color: #5670dc;
+  font-weight: 500;
+}
 
 .btn-icon2 i {
   display: inline-block;
@@ -299,7 +305,7 @@ l .btn-step.next.done {
 }
 
 .newpaper {
-  background: url(../../images/common/ico_add_file.png);
+  background: url(../../images/common/ico_add_file_blue.png);
   background-size: 13px 15px !important;
   background-size: contain;
 }
@@ -896,6 +902,7 @@ input[type=checkbox]:checked + label::before {
   top: 100%;
   width: 100%;
   background: #fff;
+  font-size: 14px;
   border: 1px solid #e0e0e0;
   border-top: 0;
   border-radius: 0 0 6px 6px;
@@ -1768,7 +1775,7 @@ input[type=checkbox]:checked + label::before {
   font-weight: 800;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .cnt-top .select-wrap:last-child .select-btn {
-  width: 130px;
+  width: 120px;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .cnt-top .select-wrap .select-btn {
   width: 150px;
@@ -1777,7 +1784,7 @@ input[type=checkbox]:checked + label::before {
   margin-left: 10px;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .cnt-top .select-wrap + .select-wrap .select-btn {
-  width: 130px;
+  width: 120px;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .cnt-top .select-list .disabled a {
   color: #666;
@@ -1818,7 +1825,7 @@ input[type=checkbox]:checked + label::before {
   margin-left: 10px;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-top .select-wrap + .select-wrap .select-btn {
-  width: 130px;
+  width: 120px;
 }
 .full-pop-que .full-pop-wrap .view-box .view-bottom .cnt-box .view-top .select-list .disabled a {
   color: #929292;

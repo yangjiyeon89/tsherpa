@@ -682,7 +682,8 @@
 			</div>
 			<div class="step-btn-wrap">
 				<button type="button" class="btn-step">STEP 1 단원 선택</button>
-				<button type="button" class="btn-step next">STEP 3 시험지 저장 </button>
+				<button type="button" class="btn-step next pop-btn" data-pop="save-pop">STEP 3 시험지 저장 </button>
+				<!-- 231026 시험지저장 팝업 추가 -->
 			</div>
 
 
@@ -793,6 +794,29 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- s 231026 팝업 추가 -->
+		<!-- 시험지 저장 팝업 -->
+		<div class="pop-wrap save-type" data-pop="save-pop">
+			<div class="pop-inner">
+				<div class="pop-header">
+					<span>시험지 저장 중</span>
+					<button type="button" class="pop-close"></button>
+				</div>
+				<div class="pop-content">
+					<span class="txt">시험지 저장 중입니다.</span>
+					<div class="save-wrap">
+						<div class="txt-box">
+							<span class="txt">이 과정은 인터넷 연결상태와 선택한 범위에 따라 수분이 걸릴 수 있습니다.<br>
+								진행 과정 중에 창을 닫지 마십시오.
+							</span>
+						</div>
+						<img src="../images/common/loading_icon.gif" alt="로딩중">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- e 231026 팝업 추가 -->
 
 		<script>
 			$(function () {
