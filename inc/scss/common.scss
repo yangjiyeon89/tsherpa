@@ -203,6 +203,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &.type-white {
+    background-color: #fff;
+    border: 1px solid $color-main-blue;
+    color: $color-main-blue;
+    font-weight: 500;
+  }
 }
 
 .btn-icon2 {
@@ -228,7 +235,7 @@ body {
 }
 
 .newpaper {
-  background: url(../../images/common/ico_add_file.png);
+  background: url(../../images/common/ico_add_file_blue.png); // 231026 이미지 변경
   background-size: 13px 15px !important;
   background-size: contain;
 }
@@ -895,7 +902,7 @@ input[type="checkbox"] {
     position: relative;
     display: flex;
     align-items: center;
-    width: 120px;
+    width: 120px; //231026 수정
     height: 36px;
     padding: 12px;
     border: 1px solid $color-line-gray;
@@ -933,6 +940,7 @@ input[type="checkbox"] {
     top: 100%;
     width: 100%;
     background: #fff;
+    font-size: 14px; //231026 추가
     border: 1px solid $color-line-gray;
     border-top: 0;
     border-radius: 0 0 6px 6px;
@@ -1973,7 +1981,7 @@ input[type="checkbox"] {
             .select-wrap {
               &:last-child {
                 .select-btn {
-                  width: 130px;
+                  width: 120px;
                 }
               }
 
@@ -1987,7 +1995,7 @@ input[type="checkbox"] {
 
 
                 .select-btn {
-                  width: 130px;
+                  width: 120px;
                 }
               }
             }
@@ -2037,7 +2045,7 @@ input[type="checkbox"] {
                 margin-left: 10px;
 
                 .select-btn {
-                  width: 130px;
+                  width: 120px;
                 }
               }
             }
