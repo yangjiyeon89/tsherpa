@@ -1,16 +1,17 @@
 #q-preview {
-  width: 700px;
+  // width: 700px; //231027 수정
+  width: 1200px; //231027 수정
   .pop-content{
     padding-bottom: 30px;
   }
   img {
     // width: auto; 
-    // max-width: 220px;
+    max-width: 453px; //231027 수정
   }
   .pop-inner {
     width: 100%;
     .scroll-inner {
-      padding: 20px 0;
+      padding: 20px;
       .view-data {
         @include layout-justify-center;
         padding: 0 20px;
@@ -19,7 +20,7 @@
         
       }
       .example-area {
-        width: 250px;
+        width: 453px; //231027 수정
         margin-bottom: 15px;
         // padding: 0 55px 0 0;
 
@@ -37,30 +38,35 @@
         // }
 
         img {
-          width: auto;
-          max-width: 220px;
+          // width: auto;
+          max-width: 453px; //231027 수정
         }
       }
     }
   }
 
   .numbering {
+    font-size: 20px;
     color: black;
-    padding-right: 6px;
-    &-numbers {
-      @include font(14px, 500);
-    }
+    padding-right: 5px;
+    // &-numbers {
+    //   @include font(15px, 500); 
+    // }
   }
   .item-question {
-    // display: flex;
+    display: flex;
     // align-items: center; //230908 수정
     margin-bottom: 15px;
+
+    img {
+      margin-left: 20px;
+    }
   }
 
   .choice-contanier {
     .answer-input{
       margin-bottom:10px;
-      // padding-left: 20px;
+      padding-left: 20px;
       li {
         padding-bottom: 10px;
       }
@@ -70,9 +76,9 @@
   .answer-tit,
   .explain-tit {
     color: #23a148;
-    @include font(12px, 600);
+    @include font(15px, 600); //231027 수정
     margin-bottom: 5px;
-    padding-right: 5px;
+    padding-right: 15px;
   }
 
   .answer-container {
@@ -80,8 +86,8 @@
     display: flex;
     // align-items: center; //230908 수정
     .answer-img{
-      width: 15px;
-      height: 15px;
+      width: 25px;
+      height: 25px;
       background: lightgray; //230908 수정
       display: inline-block;
     }

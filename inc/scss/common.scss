@@ -738,11 +738,42 @@ body {
         }
 
         .table-wrap {
-          text-align: center;
+          .tbl-view {
+            table {
+              width: 100%;
 
-          img {
-            width: auto;
-            max-width: auto;
+              th, td {
+                padding: 10px;
+                text-align: center;
+              }
+
+              thead {
+                background-color: #939393;
+                border: 1px solid #fff;
+                height: 70px;
+                color: #fff;
+
+                th {
+                  border-right: 1px solid #fff;
+                }
+              }
+
+              tbody {
+                // border: 1px solid #e0e0e0;
+                height: 50px;
+
+                td {
+                  border: 1px solid #e0e0e0;
+
+                  &:first-child {
+                    border-left: 0;
+                  }
+                  &:last-child {
+                    border-right: 0;
+                  }
+                }
+              }
+            }
           }
         }
 
