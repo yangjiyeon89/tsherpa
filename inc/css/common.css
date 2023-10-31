@@ -58,7 +58,7 @@
   margin-bottom: 15px;
 }
 #q-preview .item-question img {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 #q-preview .choice-contanier .answer-input {
   margin-bottom: 10px;
@@ -723,24 +723,30 @@ l .btn-step.next.done {
 .pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table {
   width: 100%;
 }
-.pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table th, .pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table td {
+.pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table th,
+.pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table td {
   padding: 10px;
   text-align: center;
 }
 .pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table thead {
   background-color: #939393;
-  border: 1px solid #fff;
   height: 70px;
   color: #fff;
 }
 .pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table thead th {
-  border-right: 1px solid #fff;
+  border: 1px solid #fff;
 }
 .pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table tbody {
   height: 50px;
 }
+.pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table tbody .tit {
+  text-align: left;
+}
 .pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table tbody td {
   border: 1px solid #e0e0e0;
+  font-family: "맑은 고딕", "Malgun Gothic", Dotum;
+  font-size: 10px;
+  font-weight: 600;
 }
 .pop-wrap.prev-type .pop-inner .view-box .table-wrap .tbl-view table tbody td:first-child {
   border-left: 0;
@@ -754,11 +760,11 @@ l .btn-step.next.done {
   }
 }
 .pop-wrap.prev-type .pop-inner .view-box .scroll-inner {
-  height: 665px;
+  height: 625px;
 }
 @media (max-width: 1280px) {
   .pop-wrap.prev-type .pop-inner .view-box .scroll-inner {
-    height: 360px;
+    height: 490px;
   }
 }
 .pop-wrap.prev-type .pop-inner .view-box img {
@@ -1066,12 +1072,13 @@ input[type=checkbox]:checked + label::before {
 }
 
 .tab-menu-type02 {
-  padding: 20px 30px 0;
+  padding: 20px 50px 0;
   width: 100%;
 }
 .tab-menu-type02 li {
   width: 100%;
   border: 1px solid #e0e0e0;
+  border-right: 0;
   display: flex;
   flex: 1;
   border-radius: 8px;
@@ -1084,24 +1091,20 @@ input[type=checkbox]:checked + label::before {
   border-radius: 0;
 }
 .tab-menu-type02 li:first-child {
-  border-right: 0;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .tab-menu-type02 li:last-child {
-  border-left: 0;
+  border-right: 1px solid #e0e0e0;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-.tab-menu-type02 li.active {
-  background-color: #5670dc;
-}
 .tab-menu-type02 li.active a {
-  color: #fff;
+  color: #5670dc;
 }
 .tab-menu-type02 li a {
   width: 100%;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* 단원 아코디언 */
