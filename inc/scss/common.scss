@@ -610,11 +610,13 @@ body {
     .tit-top {
       @include layout-center;
       gap: 5px;
+
       span {
         max-width: 385px;
         display: inline-block;
         @include text-overflow;
       }
+
       em {
         color: #fff000;
         font-weight: 600;
@@ -683,19 +685,6 @@ body {
         }
       }
 
-      .scroll-inner {
-        // &::after {
-        //   @include virtual-selector;
-        //   position: absolute;
-        //   top: 0;
-        //   left: 50%;
-        //   transform: translate(-50%, 22%);
-        //   width: 1px;
-        //   height: 80%;
-        //   background-color: $color-suba7;
-        // }
-      }
-
       .view-box {
         margin: 0 50px;
         border: 1px solid #ccc;
@@ -737,24 +726,25 @@ body {
           }
         }
 
+        //231031 수정
         .table-wrap {
           .tbl-view {
             table {
               width: 100%;
 
-              th, td {
+              th,
+              td {
                 padding: 10px;
                 text-align: center;
               }
 
               thead {
                 background-color: #939393;
-                border: 1px solid #fff;
                 height: 70px;
                 color: #fff;
 
                 th {
-                  border-right: 1px solid #fff;
+                  border: 1px solid #fff;
                 }
               }
 
@@ -762,12 +752,20 @@ body {
                 // border: 1px solid #e0e0e0;
                 height: 50px;
 
+                .tit {
+                  text-align: left;
+                }
+
                 td {
                   border: 1px solid #e0e0e0;
+                  font-family: '맑은 고딕', 'Malgun Gothic', Dotum;
+                  @include font(10px, 600);
+
 
                   &:first-child {
                     border-left: 0;
                   }
+
                   &:last-child {
                     border-right: 0;
                   }
@@ -782,11 +780,11 @@ body {
         }
 
         .scroll-inner {
-          height: 665px;
+          height: 625px; //231031 수정
 
 
           @media (max-width: 1280px) {
-            height: 360px;
+            height: 490px; //231031 수정
           }
         }
 
@@ -1144,13 +1142,15 @@ input[type="checkbox"] {
   }
 }
 
+//231031 수정
 .tab-menu-type02 {
-  padding: 20px 30px 0;
+  padding: 20px 50px 0;
   width: 100%;
 
   li {
     width: 100%;
     border: 1px solid $color-line-gray;
+    border-right: 0;
     display: flex;
     flex: 1;
     border-radius: 8px;
@@ -1165,28 +1165,25 @@ input[type="checkbox"] {
     }
 
     &:first-child {
-      border-right: 0;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
     }
 
     &:last-child {
-      border-left: 0;
+      border-right: 1px solid $color-line-gray;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
     }
 
     &.active {
-      background-color: $color-main-blue;
-
       a {
-        color: #fff;
+        color: $color-main-blue;
       }
     }
 
     a {
       width: 100%;
-      font-weight: 400;
+      font-weight: 500;
     }
 
 

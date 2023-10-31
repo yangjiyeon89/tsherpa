@@ -1,12 +1,12 @@
 #q-preview {
-  // width: 700px; //231027 수정
-  width: 1200px; //231027 수정
+  // width: 700px; //231031 수정
+  width: 1200px; //231031 수정
   .pop-content{
     padding-bottom: 30px;
   }
   img {
     // width: auto; 
-    max-width: 453px; //231027 수정
+    max-width: 453px; //231031 수정
   }
   .pop-inner {
     width: 100%;
@@ -20,7 +20,7 @@
         
       }
       .example-area {
-        width: 453px; //231027 수정
+        width: 453px; //231031 수정
         margin-bottom: 15px;
         // padding: 0 55px 0 0;
 
@@ -39,7 +39,7 @@
 
         img {
           // width: auto;
-          max-width: 453px; //231027 수정
+          max-width: 453px; //231031 수정
         }
       }
     }
@@ -59,7 +59,7 @@
     margin-bottom: 15px;
 
     img {
-      margin-left: 20px;
+      margin-left: 10px;
     }
   }
 
@@ -76,7 +76,7 @@
   .answer-tit,
   .explain-tit {
     color: #23a148;
-    @include font(15px, 600); //231027 수정
+    @include font(15px, 600); //231031 수정
     margin-bottom: 5px;
     padding-right: 15px;
   }
