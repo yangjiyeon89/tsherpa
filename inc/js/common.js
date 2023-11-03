@@ -130,7 +130,7 @@ $(function () {
       let _tooltip = _this.next(".tooltip"); // 툴팁 요소를 바로 뒤에 있는 요소로 찾아옴
       let _tooltipPosition = _this.offset().top; // 버튼(_this)의 전체 문서에서의 위치값을 가져옴
 
-      console.log(_tooltipPosition); 
+      console.log(_tooltipPosition);
 
       if (_tooltipPosition > 500) {
         _tooltip.css("top", "-112px"); // 툴팁 위치 변경
@@ -413,5 +413,14 @@ $(function () {
   });
   $(".btn-icon.type02").on("mouseleave", function () {
     $(this).find("i").removeClass("hover");
+  });
+
+  //231103 checkbox 클릭시 스크롤 이슈 -->
+  document.querySelectorAll('.unit-acc-wrap input[type="checkbox"]').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+      if (this.checked) {
+        window.scrollTo(0, 0); // 스크롤을 상단으로 이동
+      }
+    });
   });
 });
