@@ -612,7 +612,7 @@ body {
       gap: 5px;
 
       span {
-        max-width: 385px;
+        max-width: 480px; //231110 수정
         display: inline-block;
         @include text-overflow;
       }
@@ -676,7 +676,7 @@ body {
       .btn-wrap {
         display: flex;
         justify-content: right;
-        padding: 10px 50px;
+        padding: 10px 40px; //231110 수정
 
 
         @media (max-width: 1280px) {
@@ -686,7 +686,7 @@ body {
       }
 
       .view-box {
-        margin: 0 50px;
+        margin: 0 40px; //231110 수정
         border: 1px solid #ccc;
         border-radius: 6px;
 
@@ -1144,7 +1144,7 @@ input[type="checkbox"] {
 
 //231031 수정
 .tab-menu-type02 {
-  padding: 20px 50px 0;
+  padding: 20px 40px 0; //231110 수정
   width: 100%;
 
   li {

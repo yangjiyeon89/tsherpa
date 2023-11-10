@@ -51,14 +51,19 @@
 #q-preview .numbering {
   font-size: 20px;
   color: black;
+  padding-right: 15px;
+}
+#q-preview .numbering-numbers {
   padding-right: 5px;
+  font-size: 15px;
+  font-weight: 500;
 }
 #q-preview .item-question {
   display: flex;
   margin-bottom: 15px;
 }
 #q-preview .item-question img {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 #q-preview .choice-contanier .answer-input {
   margin-bottom: 10px;
@@ -73,7 +78,7 @@
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 5px;
-  padding-right: 15px;
+  padding-right: 11px;
 }
 #q-preview .answer-container {
   margin-bottom: 10px;
@@ -89,6 +94,9 @@
   display: flex;
   align-items: flex-start;
   line-height: 1.5;
+}
+#q-preview .passage-area img {
+  margin-left: 3px;
 }
 
 html {
@@ -627,7 +635,7 @@ l .btn-step.next.done {
   gap: 5px;
 }
 .pop-wrap .pop-header .tit-top span {
-  max-width: 385px;
+  max-width: 480px;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -686,7 +694,7 @@ l .btn-step.next.done {
 .pop-wrap.prev-type .pop-inner .btn-wrap {
   display: flex;
   justify-content: right;
-  padding: 10px 50px;
+  padding: 10px 40px;
 }
 @media (max-width: 1280px) {
   .pop-wrap.prev-type .pop-inner .btn-wrap {
@@ -694,7 +702,7 @@ l .btn-step.next.done {
   }
 }
 .pop-wrap.prev-type .pop-inner .view-box {
-  margin: 0 50px;
+  margin: 0 40px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
@@ -1072,7 +1080,7 @@ input[type=checkbox]:checked + label::before {
 }
 
 .tab-menu-type02 {
-  padding: 20px 50px 0;
+  padding: 20px 40px 0;
   width: 100%;
 }
 .tab-menu-type02 li {

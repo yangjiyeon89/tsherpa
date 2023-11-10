@@ -48,10 +48,11 @@
   .numbering {
     font-size: 20px;
     color: black;
-    padding-right: 5px;
-    // &-numbers {
-    //   @include font(15px, 500); 
-    // }
+    padding-right: 15px; //231110 수정
+    &-numbers {
+      padding-right: 5px; //231110 수정
+      @include font(15px, 500); 
+    }
   }
   .item-question {
     display: flex;
@@ -59,7 +60,7 @@
     margin-bottom: 15px;
 
     img {
-      margin-left: 10px;
+      margin-left: 5px; //231110 수정
     }
   }
 
@@ -78,7 +79,7 @@
     color: #23a148;
     @include font(15px, 600); //231031 수정
     margin-bottom: 5px;
-    padding-right: 15px;
+    padding-right: 11px; //231110 수정
   }
 
   .answer-container {
@@ -97,5 +98,11 @@
     display: flex;
     align-items: flex-start;
     line-height: 1.5;
+  }
+
+  .passage-area { //231110 수정
+    img {
+      margin-left: 3px; 
+    }
   }
 }
