@@ -690,6 +690,29 @@ body {
         border: 1px solid #ccc;
         border-radius: 6px;
 
+        //231226 수정
+        &.type-line {
+          .scroll-inner {
+            &::after {
+              content: "";
+              position: absolute;
+              top: 18%;
+              left: 50%;
+              width: 1px;
+              height: 80%;
+              background-color: #ccc;
+            }
+          }
+        }
+
+        &.type-noline {
+          .scroll-inner {
+            &::after {
+              display: none;
+            }
+          }
+        }
+
         .example-box {
           .img-box {
             max-width: 220px;
@@ -699,31 +722,7 @@ body {
         }
 
         .layout-wrap {
-          @include layout-justify-start;
-
-          &.type-noline {
-            .view-data {
-              &:nth-child(2n) {
-                &::after {
-                  display: none;
-                }
-              }
-            }
-          }
-
-          .view-data {
-            &:nth-child(2n) {
-              &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 1px;
-                height: 100%;
-                background-color: #ccc;
-              }
-            }
-          }
+          // @include layout-justify-start; //231226 수정
         }
 
         //231031 수정
@@ -1683,7 +1682,7 @@ input[type="checkbox"] {
       border: 1px solid $color-main-blue;
       border-radius: 6px;
       box-sizing: border-box;
-      
+
       &.save-complete {
         width: 100%;
         height: 803px;
@@ -2134,7 +2133,7 @@ input[type="checkbox"] {
                 //border: 2px solid $color-main-blue; //230908 수정
                 border: 2px solid #7a02cf; //231026 수정
                 //background-color: #fcfaff; //230908 수정
-                background-color: #faf4ff; //231026 수정
+                background-color: #fdfeff; //231226 수정
               }
             }
 
