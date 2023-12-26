@@ -722,7 +722,7 @@ body {
         }
 
         .layout-wrap {
-          // @include layout-justify-start; //231226 수정
+          @include layout-justify-start; //231226 수정
         }
 
         //231031 수정

@@ -13,8 +13,8 @@
     .scroll-inner {
       padding: 20px;
       .view-data {
-        @include layout-justify-center;
-        padding: 0 20px;
+        // @include layout-justify-center; //231226 수정
+        padding: 0 15px;
         flex-wrap: wrap;
         position: relative;
         
