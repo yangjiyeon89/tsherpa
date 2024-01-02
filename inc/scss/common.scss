@@ -1261,6 +1261,7 @@ input[type="checkbox"] {
     box-sizing: border-box;
     height: 100%;
     flex: 1;
+    max-width: 659px; //240102 수정
 
     .unit-box {
 
@@ -1297,6 +1298,13 @@ input[type="checkbox"] {
           // 	background: url("../../images/common/select_arrow.png") no-repeat;
           // 	transform: rotate(-90deg);
           // }
+
+           input[type="checkbox"] { //240102 수정
+          &+label {
+            width: calc(100% - 50px); 
+            display: inline-block; 
+          }
+        }
 
           &.title {
             background-color: $color-main-skyblue;
@@ -1372,6 +1380,8 @@ input[type="checkbox"] {
         .dep-btn {
           position: relative;
           @include font(15px, 500);
+          word-break: break-all; //240102 수정
+          text-align: left; //240102 수정
 
           &::before {
             @include virtual-selector;
@@ -1396,7 +1406,7 @@ input[type="checkbox"] {
     height: 100%;
     border-left: 1px solid $color-line-gray;
     box-sizing: border-box;
-
+    max-width: 659px; //240102 수정
     position: relative;
 
     .type-box {

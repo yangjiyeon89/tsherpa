@@ -203,7 +203,7 @@ $(function () {
   function popClose() {
     let _this = $(this);
     $(".pop-wrap").hide();
-    _html.css("overflow", "auto");
+    _html.css("overflow", "hidden"); //240102 auto -> hidden 수정
     _dim.fadeOut();
   }
 

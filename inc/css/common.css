@@ -1174,6 +1174,7 @@ input[type=checkbox]:checked + label::before {
   box-sizing: border-box;
   height: 100%;
   flex: 1;
+  max-width: 659px;
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt {
   width: 100%;
@@ -1199,6 +1200,10 @@ input[type=checkbox]:checked + label::before {
   position: relative;
   padding: 10px 0 10px 25px;
   cursor: pointer;
+}
+.view-box-wrap .unit-box-wrap .unit-box .unit-cnt .check-group input[type=checkbox] + label {
+  width: calc(100% - 50px);
+  display: inline-block;
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt .check-group.title {
   background-color: #f0f6ff;
@@ -1253,6 +1258,8 @@ input[type=checkbox]:checked + label::before {
   position: relative;
   font-size: 15px;
   font-weight: 500;
+  word-break: break-all;
+  text-align: left;
 }
 .view-box-wrap .unit-box-wrap .unit-box .unit-cnt .dep-btn::before {
   content: "";
@@ -1273,6 +1280,7 @@ input[type=checkbox]:checked + label::before {
   height: 100%;
   border-left: 1px solid #e0e0e0;
   box-sizing: border-box;
+  max-width: 659px;
   position: relative;
 }
 .view-box-wrap .type-box-wrap .type-box {
